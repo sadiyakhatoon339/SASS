@@ -1,0 +1,26 @@
+@mixin border($rad,$shadow,$border){
+    
+/*for different browser*/
+-webkit{
+    border-radius:$rad;
+}
+-moz{
+    border-radius:$rad;
+}
+/*standard*/
+    border-radius:$rad;
+
+-webkit{
+    box-shadow:$shadow;
+}
+-moz{
+    box-shadow:$shadow;
+}
+/*standard*/
+    box-shadow:$shadow;
+
+border:$border;
+
+
+}
+

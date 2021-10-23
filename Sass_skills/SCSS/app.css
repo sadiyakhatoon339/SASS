@@ -1,0 +1,95 @@
+/*variables*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: pink;
+  font-family: Georgia, Times, serif;
+}
+
+#header {
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: green;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.main-content {
+  width: 100%;
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  /*otherwise everything will stack one upon the ither*/
+  background-color: #eee;
+}
+
+#main-nav {
+  background-color: #27ad8c;
+  width: 100%;
+  display: block;
+  padding: 10px 0 40px;
+}
+
+#main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main-nav ul li {
+  float: left;
+  margin-left: 30px;
+}
+
+#main-nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #eee;
+}
+
+#main-nav ul li a:hover {
+  color: red;
+}
+
+.pro-img {
+  /*for different browser*/
+  /*standard*/
+  border-radius: 10px;
+  /*standard*/
+  -webkit-box-shadow: 0 0 15px #555;
+          box-shadow: 0 0 15px #555;
+  border: 1px solid #27ad8c;
+  background-color: #27ad8c;
+  width: 22%;
+  height: 120px;
+  display: inline-block;
+  float: none;
+  margin: 15px;
+}
+
+.pro-img -webkit {
+  border-radius: 10px;
+}
+
+.pro-img -moz {
+  border-radius: 10px;
+}
+
+.pro-img -webkit {
+  -webkit-box-shadow: 0 0 15px #555;
+          box-shadow: 0 0 15px #555;
+}
+
+.pro-img -moz {
+  -webkit-box-shadow: 0 0 15px #555;
+          box-shadow: 0 0 15px #555;
+}
+/*# sourceMappingURL=app.css.map */

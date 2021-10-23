@@ -1,0 +1,25 @@
+@mixin btn-variant($color,$background,$border){
+
+    $active-background:darken($brand-primary,10%);
+    $active-border:darken($base-dark,10%);
+  
+     color:white;
+     background-color: $active-background;
+     border-color:   $active-border ;
+
+     &:hover{
+         color:white;
+         background-color: $active-border;
+         border-color: $active-background;
+     }
+
+}
+
+
+@mixin btn-sizing($btn-padding-x,$btn-padding-y,$font-size,$border-radius)
+{
+    padding:$btn-padding-x $btn-padding-y;
+    font-size: $font-base;
+    border-radius: $border-radius;
+
+}

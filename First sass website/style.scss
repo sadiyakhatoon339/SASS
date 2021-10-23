@@ -1,0 +1,171 @@
+//variables
+$brand-name:        #6600CC;
+$brand-sub:        #CC66FF;
+$brand-dark:#333;
+$brand-light:#E6F2FF;
+
+//mixins
+/*to shape things*/
+@mixin somename($height,$width,$rad,$bg,$color){  /*initializing different style  with the parameters */
+    height:$height;
+    width:$width;
+    /*for different browsers*/
+    -webkit-border-radius:$rad ;
+    -moz-border-radius:$rad;
+    -ms-border-radius:$rad;
+
+    border-radius:$rad;/*standard */
+    background-color: $bg;
+    color:$color;
+
+
+}
+
+
+
+//Styles
+body{
+    background-color:#E6F2FF ;
+
+}
+
+section {
+    background-color:$brand-sub ;
+    color:$brand-dark;
+    width:780px;
+    margin:auto;
+    padding:20px;
+    border-radius:70x;
+    position: relative;
+    z-index:-2;
+    
+}
+
+.thumb1{
+    @include somename(120px,120px,10%,$brand-dark,$brand-light);
+   margin:0 150px -90px;
+
+
+    }
+
+    
+.thumb2{
+    @include somename(100px,100px,50%,$brand-sub,$brand-light);
+   margin:-60px 1000px; 
+
+
+    }
+
+    
+    h1{
+        text-align:center;
+        padding-top:20px;
+    }
+
+    @mixin btn-main($padding,$radius,$bg,$color){
+        padding:$padding;
+        border-radius: $radius;
+        background-color: $bg;
+        color:$color;
+        border-width: 0;
+        border-style: none;
+        cursor: pointer;
+        display:block;
+        margin:auto;
+        &:hover{
+            background-color: lighten($brand-name,20%); 
+             /*we want to lighten the color of the button when we hover over it and we want to change the sign by 20%*/
+
+
+        }
+       
+    }
+.btn-1{
+    @include btn-main(15px 20px,7px,$brand-name,white)
+
+}
+
+
+    body{
+        background-color:$brand-light;
+    }
+.btn-2{
+    @include btn-main(30px, 50px,$brand-dark,white);
+    font-size:2rem;
+    &:hover{
+        background-color:darken($brand-name,10%);
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
